@@ -3,4 +3,4 @@
 from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("Pantalla de Index")
+    return HttpResponse("Ola k ase")
