@@ -1,5 +1,5 @@
 # Django settings for claseTopicos project.
-
+import os
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
@@ -108,10 +108,14 @@ ROOT_URLCONF = 'claseTopicos.urls'
 WSGI_APPLICATION = 'claseTopicos.wsgi.application'
 
 TEMPLATE_DIRS = (
+    os.path.join(os.path.dirname(os.path.dirname(__file__)), 'templates'),
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
 )
+
+
+
 
 INSTALLED_APPS = (
     'django.contrib.auth',
@@ -126,6 +130,8 @@ INSTALLED_APPS = (
     # Uncomment the next line to enable admin documentation:
     # 'django.contrib.admindocs',
 )
+
+
 
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
