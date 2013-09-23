@@ -11,6 +11,7 @@ class Carrera(models.Model):
 class Estudiante(models.Model):
     nombre = models.CharField(max_length=255)
     email = models.EmailField()
+    telefono = models.CharField(max_length = 10, null= True)
     carrera = models.ForeignKey(Carrera, null=True)
 
     def __unicode__(self):
