@@ -1,12 +1,15 @@
+{% load staticfiles %}
+
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>Clase de topicos</title>
+	<link rel="stylesheet" href="{{STATIC_URL}}css/home.css"/>
 </head>
 <body>
-	<header>
-		<h2>Esta es la clase de topicos</h2>
+	<header class="header">
+		<h2 class="title">Esta es la clase de topicos</h2>
 	</header>
 	{% block body %}
 	
