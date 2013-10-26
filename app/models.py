@@ -18,7 +18,7 @@ class Estudiante(models.Model):
         return 'http://placehold.it/200x100/E8117F/ffffff/&text=%s' % self.nombre
 
     def es_informatico(self):
-        return self.carrera == 'Ingenieria Informatica'
+        return self.carrera.nombre == 'Ingenieria Informatica'
 
     es_informatico.boolean = True
     es_informatico.admin_order_field = 'carrera'

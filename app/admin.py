@@ -2,7 +2,7 @@ from django.contrib import admin
 from .models import Estudiante, Carrera
 
 class EstudianteAdmin(admin.ModelAdmin):
-    list_display = ('nombre', 'imagen_rosada', 'email', 'telefono', 'carrera')
+    list_display = ('nombre', 'imagen_rosada', 'email', 'telefono', 'carrera','es_informatico')
     list_editable = ('email', 'telefono', 'carrera', )
     #list_display_links = ('carrera',)
     list_filter = ('carrera',)

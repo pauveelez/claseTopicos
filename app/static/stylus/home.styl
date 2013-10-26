@@ -1,8 +1,10 @@
 *
 	margin 0
 body
-	background lightgray
+	background #D7D7D7
 	background-image url('../img/fondo.jpg')
+	background-size cover
+	background-repeat no-repeat
 	font-family Lucida Sans Unicode
 	font-size 16px
 
@@ -11,17 +13,38 @@ body
 
 .estudiantes
 	padding 30px
+	margin-right 400px
 
 .estudiante
-	background white
-	border 2px solid gray
-	border-radius 5px
+	background #F1F1F1
+	border 2px solid #B8B8B8
+	box-shadow 5px 5px 5px rgba(#B8B8B8,.5)
+	border-radius 10px
 	display inline-block
 	font-size 17px
 	margin 10px 10px 0 0
 	padding 10px
+	min-width 350px
+	span
+		color #221D1D
+		display inline-block
+		font-weight bold
+		margin-right 10px
+		position relative
+		width 100px
+		&:after
+			content ":"
+			position absolute
+			right 0
 
 .title
 	font-size 20px
 	text-decoration underline
 	text-transform uppercase
+
+@media screen and (max-width:1000px)
+	.estudiantes
+		margin-right 0
+@media screen and (max-width:767px)
+	.estudiante
+		display block
