@@ -1,5 +1,5 @@
 *{margin:0}
-body{background:#d3d3d3;font-family:Arial;font-size:16px}
+body{background:#d3d3d3;background-image:url("../img/fondo.jpg");font-family:Lucida Sans Unicode;font-size:16px}
 .header{padding:20px}
 .estudiantes{padding:30px}
 .estudiante{background:#fff;border:2px solid #808080;border-radius:5px;display:inline-block;font-size:17px;margin:10px 10px 0 0;padding:10px}
